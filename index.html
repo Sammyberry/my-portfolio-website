@@ -6,10 +6,15 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
         <title>Sammy – Frontend Developer</title>
     </head>
     <body>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -19,98 +24,171 @@
         </nav>
 
         <header id="Home">
-            <h1>Hello!</h1>
-            <h2>My name is Sammy. I am a Junior Frontend Developer & Emerging UI
-                Designer based in Lagos, Nigeria.</h2>
+            <div class="hero-section">
+                <h3>Hello!</h3>
+                <p>My name is Sammy. I am a Junior Frontend Developer &
+                    Emerging UI
+                    Designer based in Lagos, Nigeria.
+                </p>
 
-            <div class="social-links">
-                <a href="https://github.com/Sammyberry" target="_blank"
-                    rel="noopener" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/samuel-akinbolawa-229934252/"
-                    target="_blank" rel="noopener" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://x.com/I_sammyberry" target="_blank"
-                    rel="noopener" title="X (Twitter)">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
+                <div class="hero-section-icons">
+                    <a href="https://github.com/Sammyberry" target="_blank"
+                        rel="noopener" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/samuel-akinbolawa-229934252/"
+                        target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/I_sammyberry" target="_blank"
+                        rel="noopener" title="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <button class="hero-btn">View Resume</button>
+                </div>
+
             </div>
+
         </header>
 
         <main>
             <!-- Portfolio Section -->
-            <section>
-                <h2 id="portfolio">My Projects</h2>
-                <p>A selection of my work combining design and front-end
-                    development.</p>
-            </section>
+            <div id="portfolio" class="portfolio">
+                <section class="portfolio-header">
+                    <h2>My Projects</h2>
+                    <p>A selection of my work combining design and front-end
+                        development.</p>
+                </section>
 
-            <div class="portfolio-grid">
-                <div class="project-card">
-                    <h3>Kickoff Hub</h3>
-                    <img src="images/projects/kickoffhub.png"
-                        alt="kickoffhub thumbnail"
-                    >
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <h3>Kickoff Hub</h3>
+                        <img src="images/projects/kickoffhub.png"
+                            alt="kickoffhub thumbnail">
 
-                    <div class="project-buttons">
-                        <a
-                            href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
-                            target="_blank" rel="noopener" class="btn code-btn">
-                            code
-                        </a>
+                        <div class="project-buttons">
+                            <a
+                                href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
+                                target="_blank" rel="noopener"
+                                class="btn code-btn">
+                                code
+                            </a>
 
-                        <a href="https://kickoffhub.netlify.app/"
-                            target="_blank" rel="noopener" class="btn live-btn">
-                            design
-                        </a>
+                            <a href="https://kickoffhub.netlify.app/"
+                                target="_blank" rel="noopener"
+                                class="btn live-btn">
+                                design
+                            </a>
+                        </div>
+                        <p>A demo football livescore interface showing upcoming
+                            fixtures and match sections.
+                            Built with HTML, TailwindCSS, and React.js.</p>
                     </div>
-                    <p>A demo football livescore interface showing upcoming
-                        fixtures and match sections.
-                        Built with HTML, TailwindCSS, and React.js.</p>
-                </div>
 
-                <div class="project-card">
-                    <h3>Sneakers</h3>
-                    <img src="images/projects/sneakers.png"
-                        alt="sneakers thumbnail"
-                    >
+                    <div class="portfolio-card">
+                        <h3>Sneakers</h3>
+                        <img src="images/projects/sneakers.png"
+                            alt="sneakers thumbnail">
 
-                    <div class="project-buttons">
-                        <a
-                            href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
-                            target="_blank" rel="noopener" class="btn code-btn">
-                            code
-                        </a>
+                        <div class="project-buttons">
+                            <a
+                                href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
+                                target="_blank" rel="noopener"
+                                class="btn code-btn">
+                                code
+                            </a>
+                        </div>
+                        <p>A simple e-commerce UI showcasing products, pricing,
+                            and
+                            cart interactions.
+                            Built with HTML, CSS, and JavaScript.</p>
                     </div>
-                    <p>A simple e-commerce UI showcasing products, pricing, and
-                        cart interactions.
-                        Built with HTML, CSS, and JavaScript.</p>
-                </div>
 
-                <div class="project-card">
-                    <h3>kickoff Hub - Prototype</h3>
-                    <img src="images/projects/kickoffhub-prototype.png"
-                        alt="kickoffhub prototype thumbnail">
-                    <p>A clean Figma UI design for the Kickoff Hub football
-                        insights platform.
-                        Designed in Figma.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Portfolio UI Template</h3>
-                    <img src="images/projects/Home.png"
-                        alt="Portfolio UI Template thumbnail">
-                    <p>A modern portfolio website layout created for personal
-                        branding and project showcases.
-                        Designed in Figma.</p>
+                    <div class="portfolio-card">
+                        <h3>kickoff Hub - Prototype</h3>
+                        <img src="images/projects/kickoffhub-prototype.png"
+                            alt="kickoffhub prototype thumbnail">
+                        <p>A clean Figma UI design for the Kickoff Hub football
+                            insights platform.
+                            Designed in Figma.</p>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3>Portfolio UI Template</h3>
+                        <img src="images/projects/Home.png"
+                            alt="Portfolio UI Template thumbnail">
+                        <p>A modern portfolio website layout created for
+                            personal
+                            branding and project showcases.
+                            Designed in Figma.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Skills Section -->
+            <!-- About Section -->
+            <div class="about-section">
+                <h2 id="about">About Me</h2>
+                <section>
+                    <img src alt>
+                </section>
+
+                <section>
+                    <p>I'm a Junior Frontend Developer focused on building clean
+                        and responsive user interfaces with HTML, CSS,
+                        TailwindCSS, JavaScript, and React. I also have growing
+                        experience in UI design, which helps me blend structure
+                        with simple, modern visuals. I'm committed to writing
+                        quality code, learning fast,
+                        and delivering work that feels intentional. I bring
+                        strong communication, problem-solving, and collaboration
+                        skills—making me confident and ready to contribute to
+                        real-world projects.</p>
+                </section>
+            </div>
+
+            <!-- My Skills -->
+            <div class="skills-section">
+                <h2>Skills</h2>
+
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>TailwindCSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact">
+                <section class="contact-section">
+                    <h2>Contact Me</h2>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        required>
+                    </textarea>
+
+                    <button type="submit" class="btn submit-btn">Send
+                        Message</button>
+
+                </section>
+
+            </div>
+
         </main>
+
+        <footer>
+            <p>&copy; 2025 Sammy. All rights reserved.</p>
+        </footer>
 
     </body>
 </html>
