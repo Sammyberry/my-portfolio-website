@@ -323,18 +323,36 @@ ol {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.portfolio-card p {
+    font-size: 1rem;
+    color: #666;
 }
 
 .portfolio-card img {
     width: 100%;
-    height: 170px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     border: 4px outset #000;
 }
 
 
-.project-buttons {
+.portfolio-buttons {
     display: flex;
     gap: 15px;
     margin: 1rem 0;
@@ -367,4 +385,326 @@ ol {
 
 .live-btn:hover {
     background: #15803d;
+}
+
+/* About-Section */
+
+.about {
+    background-color: #2b2b2b;
+    padding-bottom: 10vmin;
+    color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.about-section {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px outset #fff;
+
+}
+
+.about-text p {
+    font-size: 1.4rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Skills-Section */
+
+.skills-section {
+    background-color: #000312;
+    color: #fff;
+    padding-bottom: 10vmin;
+    background-image: url(images/projects/SkillsBS.5ad69da61dd96519f53d.jpg);
+    background-attachment: fixed;
+}
+
+.skills-section h2 {
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.skills-list li {
+    -webkit-animation: spin 2s linear 1;
+    animation: spin 2s linear 1;
+    padding-top: 5vmin;
+    padding-left: 1vh;
+    padding-right: 1vh
+}
+
+.skills-list i {
+    font-size: 3.2rem;
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #1572b6;
+}
+
+.fa-js {
+    color: #f7df1e;
+}
+
+.fa-react {
+    color: #61dafb;
+}
+
+.fa-git-alt {
+    color: #f05032;
+}
+
+.fa-github {
+    color: #ffffff;
+}
+
+.fa-figma {
+    color: #f24e1e;
+}
+
+.skills-list i:hover {
+    -webkit-animation: vibrate .5s linear infinite;
+    animation: vibrate .5s linear infinite
+}
+
+@-webkit-keyframes vibrate {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    25% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+
+    50% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px)
+    }
+
+    75% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes vibrate {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    25% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+
+    50% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px)
+    }
+
+    75% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .skills-list i {
+        font-size: 4vh
+    }
+}
+
+/* Contact */
+
+.contact {
+    background-color: #fff;
+    padding-bottom: 10vmin;
+    padding: 50px;
+}
+
+.contact h3 {
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+
+    color: #000;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+
+
+.form-control button {
+    width: 100px;
+    background-color: #8ab4f8;
+    border-color: #0d6efd;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1vh;
+}
+
+.form-control button:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+.form-control button:focus {
+    outline: 5px solid rgba(13, 110, 253, .25)
+}
+
+.contact #name,
+.contact #email {
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.contact #name,
+.contact #email,
+.contact #message {
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+}
+
+.contact #message {
+    border: none;
+    border-bottom: 2px solid;
+    height: 150px;
+    resize: none;
+}
+
+.contact #name:hover,
+.contact #email:hover,
+.contact #message:hover {
+    -webkit-animation: mymove 3s ease-in-out infinite;
+    animation: mymove 3s ease-in-out infinite;
+    border-bottom: 2px solid;
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        border-color: #ee7752
+    }
+
+    25% {
+        border-color: #23d5ab
+    }
+
+    50% {
+        border-color: #e73c7e
+    }
+
+    75% {
+        border-color: #8ab4f8
+    }
+
+    to {
+        border-color: #ee7752
+    }
+}
+
+@keyframes mymove {
+    0% {
+        border-color: #ee7752
+    }
+
+    25% {
+        border-color: #23d5ab
+    }
+
+    50% {
+        border-color: #e73c7e
+    }
+
+    75% {
+        border-color: #8ab4f8
+    }
+
+    to {
+        border-color: #ee7752
+    }
+}
+
+.form-control input,
+.form-control textarea {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* footer*/
+footer {
+    background-color: #000;
+    bottom: 0;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
 }

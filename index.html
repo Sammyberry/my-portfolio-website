@@ -67,7 +67,7 @@
                         <img src="images/projects/kickoffhub.png"
                             alt="kickoffhub thumbnail">
 
-                        <div class="project-buttons">
+                        <div class="portfolio-buttons">
                             <a
                                 href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
                                 target="_blank" rel="noopener"
@@ -78,7 +78,7 @@
                             <a href="https://kickoffhub.netlify.app/"
                                 target="_blank" rel="noopener"
                                 class="btn live-btn">
-                                design
+                                live
                             </a>
                         </div>
                         <p>A demo football livescore interface showing upcoming
@@ -91,7 +91,7 @@
                         <img src="images/projects/sneakers.png"
                             alt="sneakers thumbnail">
 
-                        <div class="project-buttons">
+                        <div class="portfolio-buttons">
                             <a
                                 href="https://github.com/Sammyberry/Livescore-project-kickoff-hub"
                                 target="_blank" rel="noopener"
@@ -109,6 +109,15 @@
                         <h3>kickoff Hub - Prototype</h3>
                         <img src="images/projects/kickoffhub-prototype.png"
                             alt="kickoffhub prototype thumbnail">
+
+                        <div class="portfolio-buttons">
+                            <a
+                                href="https://www.figma.com/design/421Jb3l2oEUQXsJXXbnp69/Football-Livescore-Project?node-id=0-1&t=VPgJez2sMXlPZiFM-1"
+                                target="_blank" rel="noopener"
+                                class="btn code-btn">
+                                design
+                            </a>
+                        </div>
                         <p>A clean Figma UI design for the Kickoff Hub football
                             insights platform.
                             Designed in Figma.</p>
@@ -118,6 +127,15 @@
                         <h3>Portfolio UI Template</h3>
                         <img src="images/projects/Home.png"
                             alt="Portfolio UI Template thumbnail">
+
+                        <div class="portfolio-buttons">
+                            <a
+                                href="https://www.figma.com/design/UllpWg6b4ITju3rCIpHvtP/My-Portfolio-Website--Prototype-?node-id=0-1&t=e41d4iSjCmbDPlAT-1"
+                                target="_blank" rel="noopener"
+                                class="btn code-btn">
+                                design
+                            </a>
+                        </div>
                         <p>A modern portfolio website layout created for
                             personal
                             branding and project showcases.
@@ -127,59 +145,73 @@
             </div>
 
             <!-- About Section -->
-            <div class="about-section">
+            <div class="about">
                 <h2 id="about">About Me</h2>
-                <section>
-                    <img src alt>
-                </section>
+                <div class="about-section">
+                    <section class="about-img">
+                        <img src="images/projects/My-Picture.jpg"
+                            alt="profile-picture">
+                    </section>
 
-                <section>
-                    <p>I'm a Junior Frontend Developer focused on building clean
-                        and responsive user interfaces with HTML, CSS,
-                        TailwindCSS, JavaScript, and React. I also have growing
-                        experience in UI design, which helps me blend structure
-                        with simple, modern visuals. I'm committed to writing
-                        quality code, learning fast,
-                        and delivering work that feels intentional. I bring
-                        strong communication, problem-solving, and collaboration
-                        skills—making me confident and ready to contribute to
-                        real-world projects.</p>
-                </section>
+                    <section class="about-text">
+                        <p>I'm a Junior Frontend Developer focused on building
+                            clean
+                            and responsive user interfaces with HTML, CSS,
+                            TailwindCSS, JavaScript, and React. I also have
+                            growing
+                            experience in UI design, which helps me blend
+                            structure
+                            with simple, modern visuals. I'm committed to
+                            writing
+                            quality code, learning fast,
+                            and delivering work that feels intentional. I bring
+                            strong communication, problem-solving, and
+                            collaboration
+                            skills—making me confident and ready to contribute
+                            to
+                            real-world projects.</p>
+                    </section>
+                </div>
+
             </div>
 
             <!-- My Skills -->
-            <div class="skills-section">
+            <div id="skills" class="skills-section">
                 <h2>Skills</h2>
 
                 <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>TailwindCSS</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Figma</li>
+                    <li><i class="fab fa-html5" title="HTML"></i></li>
+                    <li><i class="fab fa-css3-alt" title="CSS"></i></li>
+                    <li><i class="fab fa-js" title="JavaScript"></i></li>
+                    <li><i class="fab fa-react" title="React"></i></li>
+                    <li><i class="fab fa-git-alt" title="Git"></i></li>
+                    <li><i class="fab fa-github" title="GitHub"></i></li>
+                    <li><i class="fab fa-figma" title="Figma"></i></li>
                 </ul>
+
             </div>
 
             <!-- Contact Section -->
             <div id="contact">
-                <section class="contact-section">
-                    <h2>Contact Me</h2>
+                <section class="contact">
+                    <h3>Contact</h3>
 
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <form action class="form-control">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4"
-                        required>
-                    </textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4"
+                            required>
+                       </textarea>
 
-                    <button type="submit" class="btn submit-btn">Send
-                        Message</button>
-
+                        <button type="submit" class="btn submit-btn">Send
+                            Message
+                        </button>
+                    </form>
                 </section>
 
             </div>
@@ -187,7 +219,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 Sammy. All rights reserved.</p>
+            <p>Sammy Berry &copy; 2025</p>
         </footer>
 
     </body>
