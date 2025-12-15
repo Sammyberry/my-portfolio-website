@@ -160,7 +160,7 @@ section {
     }
 }
 
-.hero-section a {
+.hero-section a i {
     color: #fff;
     font-size: 3rem;
 }
@@ -369,7 +369,7 @@ section {
         align-items: center;
     }
 
-    .hero-section a {
+    .hero-section a i {
         font-size: 1.5rem;
     }
 
