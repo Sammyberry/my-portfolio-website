@@ -1,29 +1,47 @@
-const form = document.querySelector('.form-control');
-const formStatus = document.getElementById('formStatus');
+const form = document.querySelector("form");
+const formStatus = document.getElementById("formStatus");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-  if (!name || !email || !message) {
-    formStatus.textContent = "Please fill in all fields.";
-    formStatus.className = "form-status error";
+  // Reset status
+  formStatus.textContent = "";
+  formStatus.className = "form-status";
+
+  // Validate Name
+  if (name === "") {
+    formStatus.textContent = "Please enter your name.";
+    formStatus.classList.add("error");
+    e.preventDefault();
     return;
   }
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+  // Validate Email
   if (!emailPattern.test(email)) {
     formStatus.textContent = "Please enter a valid email address.";
-    formStatus.className = "form-status error";
+    formStatus.classList.add("error");
+    e.preventDefault();
     return;
   }
 
-  formStatus.textContent = "Thank you! Your message has been sent.";
-  formStatus.className = "form-status success";
+  // Validate Message
+  if (message === "") {
+    formStatus.textContent = "Please enter your message.";
+    formStatus.classList.add("error");
+    e.preventDefault();
+    return;
+  }
 
-  form.reset();
+  // Show "Sending..." message
+  formStatus.textContent = "Sending...";
+  formStatus.classList.add("success");
+
+  // Delay 1 second, then show "Thank you" message
+  setTimeout(() => {
+    formStatus.textContent = "Thank you! Your message has been sent.";
+  }, 1000);
+  
 });

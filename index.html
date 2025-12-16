@@ -205,26 +205,31 @@
                 <section class="contact">
                     <h3>Contact</h3>
 
-                    <form action class="form-control">
+                    <form name="contact" method="POST" class="form-control"
+                        data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- Netlify hidden fields -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you’re human: <input
+                                    name="bot-field"></label>
+                        </p>
+
                         <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name">
 
                         <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
 
                         <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="4" maxlength="500"
-                            required>
-                       </textarea>
+                        <textarea id="message" name="message" rows="4"
+                            maxlength="500"></textarea>
 
                         <button type="submit" class="btn submit-btn">Send
-                            Message
-                        </button>
-
+                            Message</button>
                         <p id="formStatus" class="form-status"></p>
                     </form>
-                </section>
 
+                </section>
             </div>
 
         </main>
