@@ -924,6 +924,19 @@ textarea:focus {
     outline: none;
 }
 
+.form-status {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.form-status.success {
+    color: #4caf50;
+}
+
+.form-status.error {
+    color: #ff5252;
+}
+
 /* Tablet screens */
 @media only screen and (max-width: 1024px) {
     .contact {
