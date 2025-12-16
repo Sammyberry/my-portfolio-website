@@ -2,7 +2,7 @@
 
 A modern and responsive personal portfolio website showcasing my projects, skills, and contact information.
 
-## 🔗 Live Demo
+## 🔗 Portfolio Link
 https://sammywebdev.netlify.app/
 
 ## 🛠 Built With
